@@ -6,11 +6,11 @@ pipeline {
             steps {
                 echo 'validating'
             }
+            }
             stage('compile'){
             steps{
             echo 'compiling'
             }
             }
-        }
     }
 }
