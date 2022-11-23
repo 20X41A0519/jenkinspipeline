@@ -2,9 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('validate') {
             steps {
-                echo 'Hello World'
+                echo 'validating'
+            }
+            stage('compile'){
+            steps{
+            echo 'compiling'
+            }
             }
         }
     }
